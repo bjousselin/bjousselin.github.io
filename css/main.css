@@ -42,7 +42,7 @@ h1 {
 	}
 
 h2 {
-	font-size: 0.45em;
+	font-size: 0.50em;
 	font-style: thin;
 	text-align: center;
 	color:#f0f0f0;
@@ -146,32 +146,48 @@ header nav li a:hover {
 
 /* end portfolio */
 
+/*start footer*/
+.contact-section {
+font-size: 1.5em;
+width: 100%;
+height: 9em;
+padding: 15% 0px 15% 0;
+text-align: #a1a1a1;
+}
+
+/*end footer*/
+
 /* start media queries */
 
 @media only screen and (min-width: 22em) {
+
+h1{
+	font-size: 1.60em;
+}
 
 h2{
 	font-size: 0.80em;
 }
 
 .intro-section {
-	height: 20em;
+	height: 25em;
 
 }
 }
 
 @media only screen and (min-width: 30em) {
-	
+
 h1{
-	font-size: 1.25em;
+	font-size: 1.60em;
 }
 
 h2{
-	font-size: 1em;
+	font-size: 0.80em;
 }
 
 .intro-section {
 	height: 25em;
+
 }
 
 nav ul {
@@ -201,11 +217,11 @@ nav li a {
 @media only screen and (min-width: 45em) {
 
 .intro-section {
-	height: 30em;
+	height: 45em;
 }
 	
 h1{
-	font-size: 1.5em;
+	font-size: 2.5em;
 }
 
 h2{
@@ -240,6 +256,14 @@ h2{
 
 @media only screen and (min-width: 60em) {
 
+h1{
+	font-size: 2.5em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
 .work-list {
 	text-align: left;
 	list-style-type: none;
@@ -266,6 +290,5 @@ h2{
 }
 }
 
-
-
 /* end nav */
+
