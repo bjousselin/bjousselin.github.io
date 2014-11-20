@@ -26,13 +26,13 @@ body {
 .intro-section {
 	background: transparent url("../img/background.jpg") no-repeat center top;
 	background-size: cover;
-	height: 40em;
+	height: 15em;
 	overflow: hidden;
 }
 
 
 h1 {
-	font-size: 2em;
+	font-size: 1em;
 	text-align: center;
 	line-height: 1.75;
 	color:#f0f0f0;
@@ -42,7 +42,7 @@ h1 {
 	}
 
 h2 {
-	font-size: 1.5em;
+	font-size: 0.45em;
 	font-style: thin;
 	text-align: center;
 	color:#f0f0f0;
@@ -61,21 +61,25 @@ strong {
 .fixed-nav {
 	padding: 2em 0 2em 0;
 	background-color: #F0F0F0;
+	text-align: center;
+	clear: both;
 }
 
 nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	text-align: right;
 	display: block;
 	margin: 0 10% 0 10%;
+	text-align: center;
 }
 
 nav li {
 	padding: 0 0 .5em 0;
 	font-size: 1em;
-	float: right;
+	text-align: center;
+	f
+
 }
 
 nav li a {
@@ -87,8 +91,6 @@ nav li a {
 .nav-left {
 	text-decoration: none;
 	color: #ffffff;
-	text-align: left;
-	float: left;
 	font-size: 1.3em;
 }
 
@@ -146,63 +148,122 @@ header nav li a:hover {
 
 /* start media queries */
 
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 22em) {
+
+h2{
+	font-size: 0.80em;
+}
+
+.intro-section {
+	height: 20em;
+
+}
+}
+
+@media only screen and (min-width: 30em) {
 	
-	.work-list {
-		text-align: left;
-		list-style-type: none;
-		margin:0px -10px;
-		padding:0px;
-	}
+h1{
+	font-size: 1.25em;
+}
 
-	.work-list a,
-	.work-list a:link,
-	.work-list a:visited {
-		border: 0px;
-		color: #000;
-		font-style:italic;
-		text-decoration: none;
-	}
+h2{
+	font-size: 1em;
+}
 
-	.work-list img {
-		display:block;
-		width: 100%;
-	}
-	.work-list li {
-		display:inline-block;
-		width: 49%;
-	}
+.intro-section {
+	height: 25em;
+}
+
+nav ul {
+	text-align: right;
+	display: block;
+	margin: 0 10% 0 10%;
+}
+
+nav li {
+	padding: 0 0 .5em 0;
+	font-size: 1em;
+	float: right;
+}
+
+nav li a {
+	padding-right: 1.2em;
+}
+
+.nav-left {
+	text-align: left;
+	float: left;
+	display: block;
+	clear: both;
+}
+}
+
+@media only screen and (min-width: 45em) {
+
+.intro-section {
+	height: 30em;
+}
+	
+h1{
+	font-size: 1.5em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+.work-list {
+	text-align: left;
+	list-style-type: none;
+	margin:0px -10px;
+	padding:0px;
+}
+
+.work-list a,
+.work-list a:link,
+.work-list a:visited {
+	border: 0px;
+	color: #000;
+	font-style:italic;
+	text-decoration: none;
+}
+
+.work-list img {
+	display:block;
+	width: 100%;
+}
+.work-list li {
+	display:inline-block;
+	width: 49%;
+}
 }
 
 @media only screen and (min-width: 60em) {
 
-	.work-section{
-	}
+.work-list {
+	text-align: left;
+	list-style-type: none;
+	margin:0px -10px;
+	padding:0px;
+}
 
-	.work-list {
-		text-align: left;
-		list-style-type: none;
-		margin:0px -10px;
-		padding:0px;
-	}
+.work-list a,
+.work-list 	a:link,
+.work-list a:visited {
+	border: 0px;
+	color: #000;
+	font-style:italic;
+	text-decoration: none;
+}
 
-	.work-list a,
-	.work-list 	a:link,
-	.work-list a:visited {
-		border: 0px;
-		color: #000;
-		font-style:italic;
-		text-decoration: none;
-	}
-
-	.work-list img {
-		display:block;
-		width: 100%;
-	}
+.work-list img {
+	display:block;
+	width: 100%;
+}
 	.work-list li {
-		display:inline-block;
-		width: 32.9%;
-	}
+	display:inline-block;
+	width: 32.9%;
+}
 }
 
 
