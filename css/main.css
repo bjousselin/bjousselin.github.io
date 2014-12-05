@@ -15,7 +15,7 @@ body {
 	padding: 0 0 0 0;
 	font: normal 100%/1.5 Aileron,helvetica,sans-serif;
 	font-size: 16px;
-	background-color: black;
+	background-color: #f0f0f0;
 }
 
  @font-face { font-family: DalaFloda; src: url('../fonts/DalaFloda.otf'); } 
@@ -26,7 +26,7 @@ body {
 .intro-section {
 	background: transparent url("../img/background.jpg") no-repeat center top;
 	background-size: cover;
-	height: 15em;
+	height: 100em;
 	overflow: hidden;
 }
 
@@ -146,18 +146,38 @@ header nav li a:hover {
 
 /*start footer*/
 .contact-section {
-font-size: 1.5em;
-width: 100%;
-height: 9em;
-padding: 3em 0 0 0;
-text-align: #a1a1a1;
-background-color: #F0F0F0;
+	font-size: 1.5em;
+	width: 100%;
+	height: 9em;
+	padding: 3em 0 0 0;
+	background-color: #F0F0F0;
 }
 
 .contact-text{
 	color: #000000;
 }
+
+.404-footer{
+	width: 100%;
+	height: 9em;
+	padding: 3em 0 0 0;
+	background-color: #F0F0F0;
+}
+
+p{
+	font-size: 6em;
+	font-family: Aileron, serif;
+	text-align: center;
+	padding-top: 30%;
+	color: #f0f0f0;
+	z-index: 7000;
+}
+
 /*end footer*/
+
+/*404 page*/
+
+
 
 /* start media queries */
 
@@ -294,9 +314,15 @@ background-color: #F0F0F0;
 		display:block;
 		width: 100%;
 	}
-		.work-list li {
+	.work-list li {
 		display:inline-block;
 		width: 32.9%;
+	}
+
+	p{
+		font-size: 9em;
+		padding-top: 20%;
+		padding-bottom: 20%;
 	}
 }
 

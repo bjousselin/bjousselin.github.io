@@ -53,7 +53,7 @@
 		version: '2.1.5',
 
 		defaults: {
-			padding : 15,
+			padding : 0,
 			margin  : 20,
 
 			width     : 800,
@@ -62,7 +62,7 @@
 			minHeight : 100,
 			maxWidth  : 9999,
 			maxHeight : 9999,
-			pixelRatio: 1, // Set to 2 for retina display support
+			pixelRatio: 2, // Set to 2 for retina display support
 
 			autoSize   : true,
 			autoHeight : false,
@@ -149,14 +149,14 @@
 			// Properties for each animation type
 			// Opening fancyBox
 			openEffect  : 'fade', // 'elastic', 'fade' or 'none'
-			openSpeed   : 250,
+			openSpeed   : 150,
 			openEasing  : 'swing',
 			openOpacity : true,
 			openMethod  : 'zoomIn',
 
 			// Closing fancyBox
 			closeEffect  : 'fade', // 'elastic', 'fade' or 'none'
-			closeSpeed   : 250,
+			closeSpeed   : 150,
 			closeEasing  : 'swing',
 			closeOpacity : true,
 			closeMethod  : 'zoomOut',
@@ -1690,7 +1690,7 @@
 	F.helpers.overlay = {
 		defaults : {
 			closeClick : true,      // if true, fancyBox will be closed when user clicks on the overlay
-			speedOut   : 200,       // duration of fadeOut animation
+			speedOut   : 100,       // duration of fadeOut animation
 			showEarly  : true,      // indicates if should be opened immediately or wait until the content is ready
 			css        : {},        // custom CSS properties
 			locked     : !isTouch,  // if true, the content will be locked into overlay
