@@ -2,20 +2,32 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ben Jousselin: Design Portfoio</title>
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery.sticky.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+    	$('.work-list li a').fancybox();
+      // $("#header").sticky({ topSpacing: 0 });
+    });
+  </script>
+
+	<!-- Add fancyBox main JS and CSS files -->
 </head>
 <body>
-
 	<a name="top"></a>
 	<section class= "intro-section">
 		<h1>Hello, my name is <strong>Ben Jousselin</strong><br>and I’m a designer that will only<br> ever make things I love.</h1>
 		<h2>The only way to produce great work is to love what you’re doing.<br>I believe in investing myself in your goal and taking every step with<br>you along the way. I want to help you create something that both<br>you and I are almost too excited to show the world.</h2>
 	</section>
-
-	<nav class="fixed-nav">
+	<nav id="header">
 		<ul>
 			<li class="nav-left"><a href="#top"><strong>Ben Jousselin</strong></a></li>
 			<li class="nav-right"><a href="#contact">Contact</a></li>
@@ -25,11 +37,12 @@
 	</nav>
 </header>
 
-<section class="work-section" id="work">
+
+	<section class="work-section" id="work">
 	<h2>Recent Work</h2>
 		<ul class="work-list">
 			<li>
-				<a href="#">
+				<a href="img/1.jpg">
 					<figure>
 						<div class="overlay">
 						</div>
@@ -110,7 +123,7 @@
 				</a>
 			</li>
 		</ul>
-</section>
+	</section>
 
 	<a name="contact"></a>
 	<section class= "contact-section">
@@ -118,8 +131,6 @@
 		<h2 class="contact-text">ben@joussel.in</h2>
 	</section>
 
- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/main.js"></script>
 
 </body>
 </hmtl>
