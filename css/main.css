@@ -10,16 +10,16 @@
 	box-sizing: border-box;
 }
 
+ @font-face { font-family: dalaFloda; src: url('../fonts/dalaFloda.otf'); } 
+ @font-face { font-family: aileron; src: url('../fonts/aileron.otf'); } 
+ 
 body {
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	font: normal 100%/1.5 Aileron,helvetica,sans-serif;
+	font: normal 100%/1.5 aileron,helvetica,sans-serif;
 	font-size: 16px;
 	background-color: #f0f0f0;
 }
-
- @font-face { font-family: DalaFloda; src: url('../fonts/DalaFloda.otf'); } 
- @font-face { font-family: Aileron; src: url('../fonts/Aileron.otf'); } 
 
 /* start intro */
 
@@ -50,7 +50,7 @@ h2 {
 }
 
 strong {
-	font-family: DalaFloda, serif;
+	font-family: dalaFloda, serif;
 }
 
 
@@ -166,7 +166,7 @@ header nav li a:hover {
 
 p{
 	font-size: 6em;
-	font-family: Aileron, serif;
+	font-family: aileron, serif;
 	text-align: center;
 	padding-top: 30%;
 	color: #f0f0f0;
