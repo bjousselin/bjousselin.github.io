@@ -9,6 +9,16 @@
  * Copyright 2012 Janis Skarnelis - janis@fancyapps.com
  *
  */
+ 
+// media helper
+
+jQuery(document).ready(function ($) {
+    $('.fancybox').fancybox({
+        helpers: {
+            media: {}
+        }
+    });
+});
 
 (function (window, document, $, undefined) {
 	"use strict";
@@ -2018,3 +2028,5 @@
 	});
 
 }(window, document, jQuery));
+
+
